@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.robustsoftware.coachassist.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main"
+        android:id="@+id/include" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/fab_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/fab_margin"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <ImageButton
+                    android:id="@+id/games"
+                    android:layout_width="0dp"
+                    android:layout_height="128dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="6dip"
+                    android:contentDescription="TODO"
+                    android:backgroundTint="@android:color/transparent"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ball4" />
+
+            <!--android.support.design.widget.FloatingActionButton
+                android:id="@+id/games"
+                android:layout_width="wrap_content"
+                android:layout_height="128dp"
+                android:layout_gravity="bottom|end"
+                android:layout_weight="0.23"
+                app:backgroundTint="@android:color/transparent"
+                app:srcCompat="@drawable/ball4" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/team"
+                android:layout_width="wrap_content"
+                android:layout_height="128dp"
+                android:layout_gravity="bottom|end"
+                android:layout_weight="0.23"
+                app:backgroundTint="@android:color/transparent"
+                app:srcCompat="@drawable/team_icon1" /-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
